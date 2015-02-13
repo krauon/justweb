@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+	<script type="text/javascript">
+		function hello(){
+			return 'hello';
+		}
+		function world(){
+			return 'world';
+		}
+		function greeting(){
+			var h=hello();
+			var w=world();
+			document.getElementById('message').setAttribute('value', h+w);
+		}
+		function number(){
+			for(var i=0;i<100;i++){
+				console.log(i);
+			}
+		}
+	</script>
+
+<body>
+	<input type="text" value="" id="message" />
+	<input type="button" value="Hello World" onClick="greeting()" />
+	<input type="button" value="Number" onClick="number()" />
+</body>
+</html>
